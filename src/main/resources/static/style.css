@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #ff7eb3, #65d6ce, #fddb92);
+  background-size: 600% 600%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.reloj {
+  font-size: 4rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  animation: pulso 1.5s infinite alternate;
+}
+
+@keyframes pulso {
+  from { text-shadow: 0 0 5px #00ffcc; }
+  to { text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc; }
+}
